@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="home.css">
+        <meta http-equiv="refresh" ></body>
+    </head>
+    <body>
+        <div class="calculator">
+            <div class="calculator_display">
+                <input type="text" class="displayInput" id="displayField" value="" disabled>
+            </div>
+
+            <div class="calculator_key">
+                <button class="key--operation" data-action="add" onclick="updateDisplay('+')">+</button>
+                <button class="key--operation" data-action="subtract" onclick="updateDisplay('-')">-</button>
+                <button class="key--operation" data-action="multiply" onclick="updateDisplay('*')">&times;</button>
+                <button class="key--operation" data-action="divide" onclick="updateDisplay('/')">&divide;</button>
+                
+                <button class="first-row" onclick="updateDisplay('7')">7</button>
+                <button class="first-row" onclick="updateDisplay('8')">8</button>
+                <button class="first-row" onclick="updateDisplay('9')">9</button>
+                
+                <button class="key--equal" data-action="calculate" onclick="calculate()">=</button>
+                
+                <button class="second-row" onclick="updateDisplay('4')">4</button>
+                <button class="second-row" onclick="updateDisplay('5')">5</button>
+                <button class="second-row" onclick="updateDisplay('6')">6</button>
+                
+                <button class="third-row" onclick="updateDisplay('1')">1</button>
+                <button class="third-row" onclick="updateDisplay('2')">2</button>
+                <button class="third-row" onclick="updateDisplay('3')">3</button>
+                
+                <button class="key--zero" onclick="updateDisplay('0')">0</button>
+                <button data-action="decimal" onclick="updateDisplay('.')">.</button>
+                <button data-action="clear" onclick="clearDisplay()">C</button>
+            </div>
+        </div>
+
+        <script src="home.js"></script>
+    </body>
+</html>
