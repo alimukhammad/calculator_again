@@ -25,9 +25,9 @@ document.addEventListener('click', e => {
 
 function displayValue(value){
     const displayField = document.getElementById('displayField');
-    if (value === '×') {
+    if (value === '*') {
         displayField.value += '*';
-    } else if (value === '÷') {
+    } else if (value === '/') {
         displayField.value += '/';
     } else {
         displayField.value += value;
